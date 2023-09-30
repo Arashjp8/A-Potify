@@ -2,6 +2,6 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className={'text-green-500'}>Hello spotify</div>
+    <div className={'text-green-500'}>Main Content</div>
   )
 }
