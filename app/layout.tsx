@@ -6,6 +6,7 @@ import SupabaseProvider from "@/providers/SupabaseProvider";
 import React, { ReactNode } from "react";
 import UserProvider from "@/providers/UserProvider";
 import ModalProvider from "@/providers/ModalProvider";
+import ToasterProvider from "@/providers/ToasterProvider";
 
 const figtreeFont = Figtree({ subsets: ["latin"], weight: ["300", "400", "500"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={figtreeFont.className} style={figtreeFont.style}>
+        <ToasterProvider />
         <SupabaseProvider>
             <UserProvider>
                 <ModalProvider />
