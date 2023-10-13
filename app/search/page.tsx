@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import SearchInput from "@/components/SearchInput";
 import SearchContent from "@/app/search/components/SearchContent";
 
+export const revalidate = 0;
+
 interface Props {
     searchParams: {
         title: string;
