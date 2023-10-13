@@ -2,6 +2,7 @@
 import React from "react";
 import { Song } from "@/types";
 import MediaItem from "@/components/MediaItem";
+import LikeButton from "@/components/LikeButton";
 
 interface Props {
     songs: Song[];
@@ -19,7 +20,7 @@ function SearchContent({ songs }: Props) {
                         <MediaItem onClick={() => {
                         }} data={song} />
                     </div>
-                    {/*TODO: Add like button here */}
+                    <LikeButton songID={song.id} />
                 </div>
             ))}
         </div>
